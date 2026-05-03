@@ -96,3 +96,29 @@ footer {
     font-size: 20px;
   }
 }
+/* Container da imagem */
+.imagem {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Imagem com efeito */
+.imagem img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+
+  /* Sombra elegante */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+  /* Animação suave */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.imagem img:hover {
+  transform: scale(1.05);
+
+  /* Sombra mais intensa no hover */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
